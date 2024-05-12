@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving_License_Written_Exam_Pratice</title>
+    <link rel="stylesheet" href="style/Choose_&_Tick.css">
+    <link rel="stylesheet" type="text/css" href="style/nav_bars.css" >
+
+</head>
+
+<body style="background-image:url('image/bc.jpg')"> 
+    <div class="navbar">
+        <div id="part_1">  
+            <div class="mobile_nav">
+                <ion-icon class="nav_icon" id="menu" name="grid-outline"></ion-icon>
+                <ion-icon class="nav_icon" id="close" name="close-circle-outline"></ion-icon>        
+            </div> 
+            <a href="index.html" id="home">Home</a>  
+            <a href="Contact.html"  id="contact">Contact Us</a> 
+        </div>
+        <div id="part_2">
+            <a href="index.html" id="img_link" ><img src="image/logos.png" alt="Logo of website" id="logo"></a>
+        
+        </div>
+        <div id="part_3">
+            <div class="mobile_nav">
+                <ion-icon class="nav_icon" id="menu" name="grid-outline"></ion-icon>
+                <ion-icon class="nav_icon" id="close" name="close-circle-outline"></ion-icon>        
+            </div>
+            <a href="Choose_&_Tick.html" id="choose">Choose and Tick</a>  
+            <a href="List_of_Q.html" id="list">List of Question</a>  
+             
+        </div>
+    </div>
+
+    <div id="OPERATION_box">
+        <div class="container"> 
+            <p class="bold_text"></p> <!-- Question here -->
+            <div class="option_box">  
+                <div class="options-container"> 
+                    <label class="option">
+                        <input type="radio" class="radio_btn" id="a" name="btn"><span id="a1"></span>   <!-- Option here 1 -->
+                    </label>
+                    <label class="option">
+                        <input type="radio" class="radio_btn" id="b" name="btn"><span id="b1"></span>   <!-- Option here 2 -->
+                    </label>
+                    <label class="option">
+                        <input type="radio" class="radio_btn" id="c" name="btn"><span id="c1"></span>   <!-- Option here 3 -->
+                    </label>
+                    <label class="option">
+                        <input type="radio" class="radio_btn" id="d" name="btn"><span id="d1"></span>   <!-- Option here 4 -->
+                    </label>
+                </div> 
+                <button type="submit" onclick="checkAnswer()" class="check_btn">Check</button>
+                <button type="submit" onclick="next()"id="bnext" class="next_display">NEXT Question</button>   
+            </div>
+        </div> 
+        <div> 
+            <p id="wrong_right"></p> 
+        </div>
+        <div id="Result">
+            <span><---------Result--------></span>
+            <span>Question Number       : <b id="que">1</b>    </span>
+            <span>Correct Answer Number : <b id="correct">0</b></span>
+            <span>Wrong Answer Number   : <b id="wrong">0</b>  </span>
+        </div>    
+   
+    </div>
+
+    <div id="error-box" >
+        <p id="error-message"></p>
+    </div>
+
+
+<script defer src="java/choose_&_tick.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
